@@ -66,4 +66,4 @@ PE_score <- PE_score %>%
   left_join(deg_results %>% select(Gene.Name, avg_log2FC), by = "Gene.Name")
 
 # Write file for plots in Python
-write.table(x = PE_score, file = 'REGION_PE_anno-sorted4_foldchange.txt', quote = FALSE, sep = '\t', col.names = TRUE, row.names = FALSE)
+write.table(x = PE_score, file = 'REGION_PE_anno-sorted_foldchange.txt', quote = FALSE, sep = '\t', col.names = TRUE, row.names = FALSE)
