@@ -67,22 +67,3 @@ PE_score <- PE_score %>%
 
 # Write file for plots in Python
 write.table(x = PE_score, file = 'REGION_PE_anno-sorted4_foldchange.txt', quote = FALSE, sep = '\t', col.names = TRUE, row.names = FALSE)
-
-# Convert ATAC scores to numeric
-PE_score$fos_pos_atac <- as.numeric(PE_score$fos_pos_atac)
-PE_score$fos_neg_atac <- as.numeric(PE_score$fos_neg_atac)
-
-# Select only rows where "promoter" is present in the "Annotation" column
-promoter_data <- PE_score %>%
-  filter(grepl("promoter", Annotation))
-
-# Group by Gene.Name and keep the row with the maximum log-transformed ATAC accessibility ratio
-result2 <- promoter_data %>%
-  group_by(Gene.Name) %>%
-  slice(which.max(log((fos_pos_atac + 1) / (fos_neg_atac + 1))))
-
-# Plot the smooth scatter using SCT log fold change (avg_log2FC) and the maximum log-transformed ATAC ratio
-smoothScatter(result2$avg_log2FC, log((result2$fos_pos_atac + 1) / (result2$fos_neg_atac + 1)), nrpoints = 100, cex = 0.1,
-              main = "REGION PE RNA ATAC fold change density", xlab = "Log2 Fold Change (avg_log2FC)", ylab = "Max Log ATAC Ratio")
-
-
