@@ -9,3 +9,8 @@ The neural circuitry underlying SOC, particularly the roles of sensory cortices,
 The BLA mediates the CS2-CS1 association, while the pPC, receiving inputs from the locus coeruleus and BLA, is critical for memory encoding and retrieval. Transcriptomic analysis of Fos+ ensembles in the two structures shows distinct gene activation in excitatory neurons, highlighting key pathways involved in learning and memory.
 
 These findings highlight the pPC’s role in integrating sensory and affective information, essential for long-term threat memory consolidation.
+This repository provides scripts used for our study. 
+
+https://github.com/karmaout/SOC_Multiomic_sequencing/blob/main/ATAC_motif.R
+ATAC_motif.R
+
