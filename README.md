@@ -11,6 +11,5 @@ The BLA mediates the CS2-CS1 association, while the pPC, receiving inputs from t
 These findings highlight the pPC’s role in integrating sensory and affective information, essential for long-term threat memory consolidation.
 This repository provides scripts used for our study. 
 
-https://github.com/karmaout/SOC_Multiomic_sequencing/blob/main/ATAC_motif.R
-ATAC_motif.R
+The inventory contains the codes for analyzing the Multiomi-seq data of the study, the intermediate data files are generated and deposited in Zenodo inventory: https://zenodo.org/uploads/14014437
 
