@@ -13,3 +13,13 @@ This repository provides scripts used for our study.
 
 The inventory contains the codes for analyzing the Multiomi-seq data of the study, the intermediate data files are generated and deposited in Zenodo inventory: https://zenodo.org/uploads/14014437
 
+Name	                                                        Description
+ATAC_motif_discovery.R	                                      R script for discovering motifs in snATAC-seq data.
+ATAC_processing.R	                                            R script for preprocessing and analyzing snATAC-seq data.
+BLA_QC&clustering.R	                                          R script for performing quality control and clustering analysis on BLA celss.
+BLA_neurons_subsetting_analysis.R	                            R script for subsetting BLA neurons and performing targeted analysis on specific groups or conditions.
+Gene_ontology_analysis.R	                                    R script for conducting Gene Ontology (GO) analysis to identify biological processes associated with DEGs.
+LOESS_combination.py	                                        Python script for combining and running LOESS regression analyses on integrated data.
+Motif_LOESS_regression.py	                                    Python script for performing LOESS regression analysis on motif data.
+PC_QC&clustering.R	                                          R script for quality control and clustering of PC cells.
+PC_neurons_subsetting_analysis.R	                            R script for subsetting PC neurons and performing targeted analysis on specific groups or conditions.
